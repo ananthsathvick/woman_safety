@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('/hello',function(){
+Route::get('/hel',function(){
   $db = DB::table('sample')->where('samp','70')->value('samp');
   return $db;
 });
